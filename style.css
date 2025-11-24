@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#myBackground {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-1;
+}
+
+p {
+  font-size:65px;
+  font-style:italic;
+  font-family: Times New Roman, serif;
+  line-height:30px;
+  cursor: pointer;
+  /*text-shadow:0px 0px 10px lightgreen, 0px 0px 20px lightgreen, 0px 0px 30px lightgreen, 0px 0px 40px lightgreen, 0px 0px 50px lightgreen;*/
+}
+
+#WindyText {
+  transform: rotate(-10deg);
+  position: absolute;
+  left:3%;
+  top: 8%;
+}
+
+#TrafficeyText {
+  transform: rotate(5deg);
+  position: absolute;
+  right:5%;
+  top: 20%;
+  z-index:3;
+}
+
+#BirdyText {
+  transform: rotate(-20deg);
+  position: absolute;
+  left:15%;
+  top: 35%;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width: 1024px) {
+  p {
+    font-size:50px;
+  }
+  #BirdyText {
+  left:5%;
+  top: 35%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size:40px;
+  }
+  #BirdyText {
+  top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size:40px;
+  }
+  #BirdyText {
+  top: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    p {
+    font-size:30px;
+  }
+  #WindyText {
+  top: 2%;
+  }
+  #BirdyText {
+  top: 45%;
+  }
+}
+
+/*
+.rotating-text {
+  cursor: pointer;
+  transition: transform .25s linear;
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+  }
+*/
