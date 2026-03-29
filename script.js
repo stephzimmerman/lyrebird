@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const WindyText = document.getElementById('WindyText');
-  const WindyAudio = new Audio('Wind.mp3');
+  const WindyAudio = new Audio('https://stephzimmerman.github.io/lyrebird/Wind.mp3');
   WindyAudio.loop = true;
   WindyText.style.color = 'white';
   let WindyisPlaying = false;
 
   const BirdyText = document.getElementById('BirdyText');
-  const BirdyAudio = new Audio('Birds_withoutspace.mp3');
+  const BirdyAudio = new Audio('https://stephzimmerman.github.io/lyrebird/Birds_withoutspace.mp3');
   BirdyAudio.loop = true;
   BirdyText.style.color = 'white';
   let BirdyisPlaying = false;
 
   const TrafficeyText = document.getElementById('TrafficeyText');
-  const TrafficeyAudio = new Audio('Traffic_withoutspace.mp3');
+  const TrafficeyAudio = new Audio('https://stephzimmerman.github.io/lyrebird/Traffic_withoutspace.mp3');
   TrafficeyAudio.loop = true;
   TrafficeyText.style.color = 'white';
   let TrafficeyisPlaying = false;
